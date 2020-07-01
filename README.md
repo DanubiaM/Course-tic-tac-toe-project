@@ -1,3 +1,3 @@
 # Course-tic-tac-toe-project
-[photoGit.png](Course-tic-tac-toe-project/photoGit.png)
+[tic-tac-toe](https://github.com/DanubiaM/Course-tic-tac-toe-project/blob/master/Tic_Tac_Toe.gif)
 Project  JavaScript course.
