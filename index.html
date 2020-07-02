@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stlesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Jogo da Velha</title>
 
 </head>
 <body>
-    <h1>Jogo da Velha</h1>
+    <h1>Jogo da Velha</h1> 
     <div id="buttons-container">
         <button id="2-players">2 Jogares</button>
         <button id="ia-playres">Inteligência Artifical</button>
@@ -23,9 +23,27 @@
         <div class= "box" id="block-32"></div>
         <div class= "box" id="block-33"></div>
 
-        <div id="score">
-            
+        <div id="scoreboard-container">
+            <h2>PLACAR: </h2>
+            <span class ="score-box">
+                <span id="x-scorebox">X:</span>
+                <span id="scoreboard-1">0</span>
+            </span>
+            <span class ="score-box">
+                <span id="o-scorebox"></span>
+                <span id="scoreboard-2">0</span>
+            </span>
+
         </div>
+    </div>
+
+    <div class ="hide">
+        <div class ="x">X</div>
+        <div class="o"></div>
+    </div>
+
+    <div id="message" class="hide">
+        <p>asd</p>
     </div>
 
     <script src="js/script.js"></script>
