@@ -10,11 +10,11 @@ let secondPlayer;
 let player1 = 0;
 let player2 = 0;
 
-//eventos
+//eventos nos boxes
 for(let i=0;i<boxes.length; i++){
     
     //momento em que clica no jogo
-    boxes[i].addEventListener("click", function(e){
+    boxes[i].addEventListener("click", function(){
         let  el;
        
         if(player1 == player2){ // inicia-se os dois com valor padrao igual a 0
@@ -23,8 +23,7 @@ for(let i=0;i<boxes.length; i++){
             player1++; // é computado uma jogada
 
             // IA  
-            if(secondPlayer == "ia-player"){
-                console.log("TESTE!");
+            if(secondPlayer == "ia-player"){                
                 computerPlayer();
                 player2++;
             }
@@ -45,7 +44,7 @@ for(let i=0;i<boxes.length; i++){
 
         }
         
-        //checagem de vitória
+        // a cada jogada vai fazer a checagem de vitória
 
         checkWinCondition();
     });
@@ -54,12 +53,13 @@ for(let i=0;i<boxes.length; i++){
 //eventos dos botoes
 for(let i=0; i< buttons.length; i++){
     buttons[i].addEventListener("click", function () {
-        let secondPlayer = this.getAttribute("id");
-
+        secondPlayer = this.getAttribute("id");
+        
+        // hide buttons
         for(let j=0; j< buttons.length; j++){
             buttons[j].style.display = "none";
         }
-
+        // tempo para  aparecer o jogo
         setTimeout(function(){
             let container = document.querySelector("#container");
             container.classList.remove("hide");
