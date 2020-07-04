@@ -214,10 +214,10 @@ function declareWinner(winner){
 
     if(winner == 'x'){
         scoreboardX.textContent = parseInt(scoreboardX.textContent) + 1;
-        msg = "WIN PLAYER 1";
+        msg = "WIN PLAYER X";
     }else if( winner == 'o'){
         scoreboardO.textContent = parseInt(scoreboardO.textContent) + 1;
-        msg = "WIN PLAYER 2";
+        msg = "WIN PLAYER O";
     }else{
         msg = 'VELHA!';
     }
